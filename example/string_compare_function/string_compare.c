@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 typedef char* string;
 int strCmp(char *s , char *l);
@@ -11,7 +12,8 @@ int main (void) {
 
 int strCmp (char *s , char *l)
 {
-    for (int i = 0 ; i < 3 ; i++ )
+
+    for (int i = 0 , n = strlen(s) ; i < n ; i++ )
     {
         if (&s[i] == &l[i])
         {
