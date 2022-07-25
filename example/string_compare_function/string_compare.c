@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef char* string;
 int strCmp(char *s , char *l);
 
 int main (void) {
     printf("Is identical ? %s\n", strCmp("kerolos", "kerolos") == 0 ? "Yes" : "NO");
 }
 
-// compare two address of each character
 
+// compare two address of each character
 int strCmp (char *s , char *l)
 {
 
