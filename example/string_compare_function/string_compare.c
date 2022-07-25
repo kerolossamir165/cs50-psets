@@ -7,6 +7,8 @@ int main (void) {
     printf("Is identical ? %s\n", strCmp("kerolos", "kerolos") == 0 ? "Yes" : "NO");
 }
 
+// compare two address of each character
+
 int strCmp (char *s , char *l)
 {
     for (int i = 0 ; i < 3 ; i++ )
