@@ -24,6 +24,7 @@ int strCmp (char *s , char *l)
           break;
         }
     }
+    return isIdentical;
 }
 
 
