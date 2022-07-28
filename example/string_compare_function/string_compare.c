@@ -11,13 +11,19 @@ int main (void) {
 // compare two address of each character
 int strCmp (char *s , char *l)
 {
-
-    for (int i = 0 , n = strlen(s) ; i < n ; i++ )
-    {
-        if (&s[i] == &l[i])
-        {
-            return 0;
+    int isIdentical = 0;
+    while(*s != '\0' && *l != '\0') {
+        if(*s == *l) {
+            s++;
+            l++;
+        } else if (*s > *l) {
+           isIdentical = 1;
+           break;
+        } else {
+          isIdentical = -1;
+          break;
         }
     }
-    return 1;
 }
+
+
